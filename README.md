@@ -8,6 +8,6 @@ Para rodar os testes:
 
     yarn jest
 
-Para rodaro o coverage
+Para rodar o coverage
 
     yarn jest --coverage
