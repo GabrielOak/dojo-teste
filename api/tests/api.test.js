@@ -23,26 +23,5 @@ describe('Sample Test', () => {
       // console.log(response.body[0]); 
     });
   })
-  
-  it('Post message', async () => {
-
-    const message = {message: 'Fazendo testes'}
-
-    const res = await request(app).post('/message').send(message)
-    expect(res.statusCode).toBe(200);
-    expect(res.body.message).toBe(message.message);
-
-  })
-
-  it('Post message error', async () => {
-
-    const message = {}
-
-    const res = await request(app).post('/message').send(message)
-    expect(res.statusCode).toBe(500);
-    console.log(res.body.err);
-    expect(res.body.err).toBe('No menssage sent');
-    
-  })
 
 })
